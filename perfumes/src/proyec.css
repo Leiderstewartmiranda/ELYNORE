@@ -6,9 +6,53 @@ nav{
     border-radius: 1ch;
     justify-content: right;
 }
+
+nav ul{
+    padding: 15px;
+    border-radius: 1ch;
+    margin: 1px;
+}
+
+nav ul:hover{
+    background: #e9d417;
+    color: black;
+}
+
 nav img{
     height: 50px;
     border-radius: 50%;
     margin-right: 90%;
     position: absolute;
+}
+
+.cards{
+    background: rgb(148, 148, 148);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    border-radius: 1ch;
+    justify-content: center;
+}
+
+.card{
+    padding: 15px;
+    height: 300px;
+    width:200px;
+    border-radius: 1ch;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    background: rgb(255, 255, 255);
+}
+.card img{ 
+    padding: auto;
+    width: 100%;
+    border-radius: 1ch;
+}
+.card:hover{
+    transform: translateY(-15px);
 }
