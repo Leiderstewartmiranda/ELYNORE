@@ -61,7 +61,7 @@ export function CardListH () {
           title={card.titulo} 
           nombre={card.nombre} 
           precio={card.precio}
-          //initialIsFollowing={card.isFollowing} 
+          
           card={card}
         />
       )}
