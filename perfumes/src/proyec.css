@@ -7,6 +7,11 @@ nav{
     justify-content: right;
 }
 
+a, .react-router-link {
+    text-decoration: none;
+    color: white;
+  }
+
 nav ul{
     padding: 15px;
     border-radius: 1ch;
@@ -14,7 +19,7 @@ nav ul{
 }
 
 nav ul:hover{
-    background: #e9d417;
+    background: #ad9e17;
     color: black;
 }
 
@@ -54,5 +59,40 @@ nav img{
     border-radius: 1ch;
 }
 .card:hover{
-    transform: translateY(-15px);
+    transform: translateY(-7px);
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-agg{
+    border: 2px solid rgb(66, 65, 65);
+    padding: 3px 7px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.boton-agg:hover{
+    border: 2px solid #948a31 ;
+    background: #e9d417;
+    color: black ;
+}
+
+.boton-elimi{
+    padding: 3px 7px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.boton-elimi:hover{
+    border: 2px solid rgb(255, 125, 125) ;
+    background: rgb(184, 28, 28);
+    color: black ;
 }
