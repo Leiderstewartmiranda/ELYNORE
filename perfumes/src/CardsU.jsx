@@ -12,7 +12,10 @@ const Card = ({card}) => {
                 <img src={card.imagen} alt={card.titulo} />
                 <h3>{card.nombre}</h3>
                 <p>{card.precio}</p>
-              
+                <div className="boton">
+                    <p>${card.precio}</p>
+                    <button className={botonActivo ? 'boton-elimi' : 'boton-agg'} onClick={handleClick}>{botonActivo ? 'ELIMINAR' : 'AGREGAR'}</button>
+                </div>
             </div>
     
     )
