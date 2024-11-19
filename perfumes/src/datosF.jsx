@@ -4,9 +4,9 @@ import Card from  './CardsF.jsx'
 const cardData=[
     {
         id: 1,
-        imagen: 'https://imgs.search.brave.com/P6vP_6dqJNBFU86XqCkVR3RvTw45eUxZFKGNfqp0c8c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9maW1n/cy5uZXQvbWRpbWcv/cGVyZnVtZS8zNzV4/NTAwLjQ3MjU1Lmpw/Zw', // URL de la imagen
+        imagen: 'https://imgs.search.brave.com/SZGXQU7R4IXAt_2YJmNNSbxXPfJ21HKxw5iAC2bZPuA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxaEcrVmtwZWdT/LmpwZw', // URL de la imagen
         titulo: 'Card 1',
-        nombre: 'Sorbetto Rosso',
+        nombre: 'Paris hilton love rush',
         precio: '150',
         isFollowing: true,
       },
@@ -20,17 +20,25 @@ const cardData=[
       },
       {
         id: 3,
-        imagen: '../public/logoPerfumes.jpg', // URL de la imagen
+        imagen: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1676714913-5676.jpg?crop=1xw:1.00xh;center,top&resize=980:*', // URL de la imagen
         titulo: 'Card 3',
-        nombre: '',
+        nombre: 'Dior Miss Dior',
         precio: '100',
         isFollowing: true
       },
       {
         id: 4,
-        imagen: '../public/logoPerfumes.jpg', // URL de la imagen
+        imagen: 'https://imgs.search.brave.com/e8rPRYDv0f9mb_jnc-qKniv_v3yNUSi34Ch2wbBs964/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLm1h/a2V1cC5lcy95L3k5/L3k5ZzB6aHF5bXF3/eS5qcGc', // URL de la imagen
         titulo: 'Card 4',
-        nombre: 'Acqua di Gio',
+        nombre: 'Dahab Kajal',
+        precio: '100',
+        isFollowing: true
+      },
+          {
+        id: 5,
+        imagen: 'https://farmaciaspatagonicasar.vtexassets.com/arquivos/ids/157307/8435415049542lata.jpg?v=638017167817930000', // URL de la imagen
+        titulo: 'Card 5',
+        nombre: 'Jean Paul Gaultier',
         precio: '100',
         isFollowing: true
       },
