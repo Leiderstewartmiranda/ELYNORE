@@ -51,7 +51,7 @@ const cardData=[
         isFollowing: true
       },
 ];
-export function CardListH () {
+export function CardListU () {
   return (
     <section className="cards">
       {cardData.map((card) => 
