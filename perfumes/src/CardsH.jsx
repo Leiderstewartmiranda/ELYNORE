@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import './proyec.css'
 
 const Card = ({card}) => {
+    const [botonActivo, setBotonActivo] = useState(false);
+    const handleClick = () => {setBotonActivo(!botonActivo);
+    };
    
     return(
         
