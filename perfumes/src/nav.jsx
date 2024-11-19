@@ -1,18 +1,23 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './proyec.css'
+import { CardList } from './datos';
 
-const Nav = () => {
+export function Nav() {
     return (
-        <>
-        <nav>
-          <img src="/public/logoPerfumes.jpg" alt="Logo" />
-          <ul>MUJERES</ul>
-          <ul>HOMBRES</ul>
-          <ul>UNISEX</ul>
-        </nav>
+        <Router>
+          <nav>
+            <img src="/public/logoPerfumes.jpg" alt="Logo" />
+            <ul> <Link to="/">INICIO</Link></ul>
+            <ul> <Link to="/Mujeres">MUJERES</Link></ul>
+            <ul> <Link to="/Hombres">HOMBRES</Link></ul>
+            <ul> <Link to="/Unisex">UNISEX</Link></ul>
+          </nav>
+          <Routes>
+            <Route path="/"element={<CardList />} />
+            <Route path="/Mujeres"element={<CardListM />} />
+          </Routes>
         
-        </>
+        </Router>
       )
-}
-
-export default Nav
+};
