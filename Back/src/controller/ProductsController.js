@@ -4,8 +4,8 @@ export const getProducts = async (req, res) =>
   res.send(await ProductsModel.find());
 
 export const createProduct = async (req, res) => {
-  await ProductsModel.insertMany([req.body]);
-  res.send(await ProductsModel.find());
+  const resultado = await ProductsModel.insertMany([req.body]);
+  res.send(resultado);
 };
 
 export const editProduct = async (req, res) => {
@@ -21,13 +21,16 @@ export const editProduct = async (req, res) => {
     isFollowing: isFollowing,
   };
 
-  await ProductsModel.updateOne({ _id: id }, { $set: product });
-  res.send(await ProductsModel.find());
+  const resultado = await ProductsModel.updateOne(
+    { _id: id },
+    { $set: product }
+  );
+  res.send(resultado);
 };
 
 export const deleteProduct = async (req, res) => {
   const id = parseInt(req.params.id);
 
-  await ProductsModel.deleteOne({ _id: id });
-  res.send(await ProductsModel.find());
+  const resultado = await ProductsModel.deleteOne({ _id: id });
+  res.send(resultado);
 };

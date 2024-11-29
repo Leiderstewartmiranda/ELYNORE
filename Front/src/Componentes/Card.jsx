@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //Estilos
-import "./proyec.css";
+import "../proyec.css";
 
 const Card = ({ card }) => {
   const [botonActivo, setBotonActivo] = useState(false);
@@ -11,7 +11,7 @@ const Card = ({ card }) => {
   return (
     <div className="card">
       <img src={card.imagen} alt={card.titulo} />
-      <h3>{card.nombre}</h3>
+      <h3>{card.titulo}</h3>
       <div className="boton">
         <p>${card.precio}</p>
         <button
