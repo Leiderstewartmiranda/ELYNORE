@@ -1,22 +1,19 @@
-import { useState } from 'react'
-//import img1 from './img/logoPerfumes.png';//
-import './proyec.css'
+// import { useState } from "react";
+// import logo from "./assets/logoPersumes.jpg";
+// import "./proyec.css";
 
-function App() {
+// function App() {
+//   return (
+//     <>
+//       <nav>
+//         <img src={logo} alt="Logo" />
+//         <ul>MUJERES</ul>
+//         <ul>HOMBRES</ul>
+//         <ul>UNISEX</ul>
+//       </nav>
+//       <div></div>
+//     </>
+//   );
+// }
 
-  return (
-    <>
-    <nav>
-      <img src="/public/logoPersumes.jpg" alt="Logo" />
-      <ul>MUJERES</ul>
-      <ul>HOMBRES</ul>
-      <ul>UNISEX</ul>
-    </nav>
-      <div>
-        
-      </div>
-    </>
-  )
-}
-
-export default App
+// export default App;

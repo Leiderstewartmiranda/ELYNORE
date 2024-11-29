@@ -1,29 +1,39 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './proyec.css'
-import { CardList } from './datos';
-import { CardListM } from './datosF';
-import { CardListH } from './datosH';
-import { CardListU } from './datosU';
+//Estilos
+import "./proyec.css";
+//Logo
+import logo from "./assets/logoPersumes.jpg";
+//Paginas
+import { Inicio } from "./Paginas/Inicio";
+import { Mujeres } from "./Paginas/Mujeres";
+import { Hombres } from "./Paginas/Hombres";
+import { Unisex } from "./Paginas/Unisex";
+//Router
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 export function Nav() {
-    return (
-        <Router>
-          <nav>
-            <img src="/public/logoPerfumes.jpg" alt="Logo" />
-            <ul> <Link to="/">INICIO</Link></ul>
-            <ul> <Link to="/Mujeres">MUJERES</Link></ul>
-            <ul> <Link to="/Hombres">HOMBRES</Link></ul>
-            <ul> <Link to="/Unisex">UNISEX</Link></ul>
-          </nav>
-          <Routes>
-            <Route path="/"element={<CardList />} />
-            <Route path="/Mujeres"element={<CardListM />} />
-            <Route path="/Hombres"element={<CardListH />} />
-            <Route path="/Unisex"element={<CardListU />} />
-            
-          </Routes>
-        
-        </Router>
-      )
-};
+  return (
+    <Router>
+      <nav>
+        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <ul>INICIO</ul>
+        </Link>
+        <Link to="/Mujeres">
+          <ul>MUJERES</ul>
+        </Link>
+        <Link to="/Hombres">
+          <ul>HOMBRES</ul>
+        </Link>
+        <Link to="/Unisex">
+          <ul>UNISEX</ul>
+        </Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/Mujeres" element={<Mujeres />} />
+        <Route path="/Hombres" element={<Hombres />} />
+        <Route path="/Unisex" element={<Unisex />} />
+      </Routes>
+    </Router>
+  );
+}

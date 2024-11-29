@@ -1,0 +1,13 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(248, 248, 248);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 1ch;
+  margin-top: 5%;
+}
