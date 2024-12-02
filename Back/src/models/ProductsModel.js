@@ -7,7 +7,6 @@ const productsSchema = new Schema({
   descripcion: String,
   precio: Number,
   sexo: String,
-  isFollowing: Boolean,
 });
 
 export const ProductsModel = mongoose.model("products", productsSchema);

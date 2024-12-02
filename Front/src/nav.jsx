@@ -7,6 +7,7 @@ import { Inicio } from "./Paginas/Inicio";
 import { Mujeres } from "./Paginas/Mujeres";
 import { Hombres } from "./Paginas/Hombres";
 import { Unisex } from "./Paginas/Unisex";
+import { Admin } from "./Paginas/Admin";
 //Router
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
@@ -27,12 +28,16 @@ export function Nav() {
         <Link to="/Unisex">
           <ul>UNISEX</ul>
         </Link>
+        <Link to="/Admin">
+          <ul>ADMIN</ul>
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/Mujeres" element={<Mujeres />} />
         <Route path="/Hombres" element={<Hombres />} />
         <Route path="/Unisex" element={<Unisex />} />
+        <Route path="/Admin" element={<Admin />} />
       </Routes>
     </Router>
   );
