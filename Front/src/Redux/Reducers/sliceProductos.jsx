@@ -19,13 +19,12 @@ const sliceProductos = createSlice({
       state.estado = "idle";
     },
     updateProduct: (state, action) => {
-      const { id } = action.payload.producto;
-      editProduct(id, action.payload);
+      const { _id } = action.payload;
+      editProduct(_id, action.payload);
       state.estado = "idle";
     },
     removeProduct: (state, action) => {
-      const { id } = action.payload.producto;
-      deleteProduct(id);
+      deleteProduct(action.payload);
       state.estado = "idle";
     },
   },
@@ -34,7 +33,6 @@ const sliceProductos = createSlice({
       .addCase(listarProductos.fulfilled, (state, action) => {
         state.productos = action.payload;
         state.estado = "succeeced";
-        console.log(state.productos);
       })
       .addCase(listarProductos.pending, (state, action) => {
         state.estado = "pending";

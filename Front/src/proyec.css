@@ -1,98 +1,137 @@
-nav{
-    padding: 20px;
-    background: black;
-    display: flex;
-    color: white;
-    border-radius: 1ch;
-    justify-content: right;
+nav {
+  padding: 20px;
+  background: black;
+  display: flex;
+  color: white;
+  border-radius: 1ch;
+  justify-content: right;
 }
 
-a, .react-router-link {
-    text-decoration: none;
-    color: white;
-  }
-
-nav ul{
-    padding: 15px;
-    border-radius: 1ch;
-    margin: 1px;
+a,
+.react-router-link {
+  text-decoration: none;
+  color: white;
 }
 
-nav ul:hover{
-    background: #ad9e17;
-    color: black;
+nav ul {
+  padding: 15px;
+  border-radius: 1ch;
+  margin: 1px;
 }
 
-nav img{
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 90%;
-    position: absolute;
+nav ul:hover {
+  background: #ad9e17;
+  color: black;
 }
 
-.cards{
-    background: rgb(148, 148, 148);
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    border-radius: 1ch;
-    justify-content: center;
+nav img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 90%;
+  position: absolute;
 }
 
-.card{
-    padding: 15px;
-    height: 300px;
-    width:200px;
-    border-radius: 1ch;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    background: rgb(255, 255, 255);
-}
-.card img{ 
-    padding: auto;
-    width: 100%;
-    border-radius: 1ch;
-}
-.card:hover{
-    transform: translateY(-7px);
+.cards {
+  background: rgb(148, 148, 148);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  border-radius: 1ch;
+  justify-content: center;
 }
 
-.boton{
-    display: flex;
-    flex-direction: row;
+.carta {
+  padding: 15px;
+  height: 300px;
+  width: 200px;
+  border-radius: 1ch;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+}
+.carta img {
+  padding: auto;
+  width: 100%;
+  border-radius: 1ch;
+}
+.carta:hover {
+  transform: translateY(-7px);
 }
 
-.boton-agg{
-    border: 2px solid rgb(66, 65, 65);
-    padding: 3px 7px;
-    border-radius: 10px;
-    background: black;
-    color: white;
-    margin-left: 10px;
+.boton {
+  display: flex;
+  flex-direction: row;
 }
 
-.boton-agg:hover{
-    border: 2px solid #948a31 ;
-    background: #e9d417;
-    color: black ;
+.boton-agg {
+  border: 2px solid rgb(66, 65, 65);
+  padding: 3px 7px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  margin-left: 10px;
 }
 
-.boton-elimi{
-    padding: 3px 7px;
-    border: none;
-    border-radius: 10px;
-    background: black;
-    color: white;
-    margin-left: 10px;
+.boton-agg:hover {
+  border: 2px solid #948a31;
+  background: #e9d417;
+  color: black;
 }
 
-.boton-elimi:hover{
-    border: 2px solid rgb(255, 125, 125) ;
-    background: rgb(184, 28, 28);
-    color: black ;
+.boton-elimi {
+  padding: 3px 7px;
+  border: none;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+}
+
+.boton-elimi:hover {
+  border: 2px solid rgb(255, 125, 125);
+  background: rgb(184, 28, 28);
+  color: black;
+}
+
+.button_productos {
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+}
+
+.button_tabla {
+  display: flex;
+  gap: 10px;
+}
+
+.button_iterno_productos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.seccion_titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 40px;
+  padding-top: 10px;
+}
+
+.carrito {
+  cursor: pointer;
+}
+
+.carrito:hover {
+  color: #948a31;
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease-in-out;
 }
